@@ -91,7 +91,15 @@ const Escuderias = () => {
   return (
     <div className="escuderias-page">
       <h2>Escuderías de la Temporada 2024</h2>
-      <Button label="Agregar Escudería" icon="pi pi-plus" onClick={() => setFormVisible(true)} />
+      <Button
+        label="Agregar Escudería"
+        icon="pi pi-plus"
+        onClick={() => {
+          setNewEscuderia({ nombre: '', pais: '', imagen: '' }); // Reinicia el formulario
+          setSelectedEscuderia(null); // Asegúrate de que no haya una escudería seleccionada
+          setFormVisible(true); // Muestra el formulario
+        }}
+      />
       
       <div className="escuderias-grid">
         {escuderias.map((escuderia, index) => (

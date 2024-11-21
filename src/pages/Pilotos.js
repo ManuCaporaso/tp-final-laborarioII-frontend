@@ -94,13 +94,22 @@ const Pilotos = () => {
   return (
     <div className="pilotos-page">
       <h2>Pilotos de la Temporada 2024</h2>
-      <Button className="p-button-success" label="Agregar Piloto" icon="pi pi-plus" onClick={() => setFormVisible(true)} />
+      <Button
+        className="p-button-success"
+        label="Agregar Piloto"
+        icon="pi pi-plus"
+        onClick={() => {
+          setNewPiloto({ nombre: '', numero: '', equipo: '', imagen: '' }); // Reinicia el formulario
+          setSelectedPiloto(null); // Asegúrate de que no haya un piloto seleccionado
+          setFormVisible(true); // Muestra el formulario
+        }}
+      />
       <div className="pilotos-grid">
         {pilotos.map((piloto, index) => (
           <Card
             key={index}
             title={piloto.nombre}
-            subTitle={`Numero Auto: ${piloto.numero} - Equipo: ${piloto.equipo}`}
+            subTitle={`Número Auto: ${piloto.numero} - Equipo: ${piloto.equipo}`}
             footer={
               <>
                 <Button className="p-button-success" label="Ver Perfil" icon="pi pi-search" />
@@ -170,3 +179,4 @@ const Pilotos = () => {
 };
 
 export default Pilotos;
+
