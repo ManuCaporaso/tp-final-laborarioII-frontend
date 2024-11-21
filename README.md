@@ -25,17 +25,17 @@ Este proyecto es una aplicación web dedicada a la Fórmula 1, donde se puede vi
 ### Clonar los repositorios
 1. Clona el repositorio del **frontend**:
    ```bash
-   git clone <URL_DEL_REPOSITORIO_FRONTEND>
+   git clone https://github.com/ManuCaporaso/tp-final-laborarioII-frontend.git
    ```
 2. Clona el repositorio del **backend**:
    ```bash
-   git clone <URL_DEL_REPOSITORIO_BACKEND>
+   git clone https://github.com/ManuCaporaso/tp-final-laborarioII-backend
    ```
 
 ### Configuración del backend
 1. Accede a la carpeta del backend:
    ```bash
-   cd <CARPETA_BACKEND>
+   cd <tp-final-laborarioII-backend>
    ```
 2. Instala las dependencias:
    ```bash
@@ -61,7 +61,7 @@ Este proyecto es una aplicación web dedicada a la Fórmula 1, donde se puede vi
 ### Configuración del frontend
 1. Accede a la carpeta del frontend:
    ```bash
-   cd <CARPETA_FRONTEND>
+   cd <tp-final-laborarioII-frontend>
    ```
 2. Instala las dependencias:
    ```bash
