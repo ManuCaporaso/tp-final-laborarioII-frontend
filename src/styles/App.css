@@ -1,0 +1,160 @@
+/* Estilos para la barra de navegación */
+.menubar {
+  background-color: #007bff; /* Color de fondo azul */
+  color: #ffffff; /* Color del texto */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.menubar .p-menubar-root {
+  display: flex; /* Usar Flexbox para la disposición */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.menubar .p-menubar-item {
+  color: #ffffff; /* Color del texto de los elementos */
+  margin: 0 15px; /* Espaciado entre elementos */
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+.menubar .p-menubar-item:hover {
+  color: #e0e0e0; /* Color más claro al pasar el cursor */
+}
+
+.menubar .p-menubar-item .p-menubaritem-icon {
+  margin-right: 5px; /* Espaciado entre ícono y texto */
+}
+
+.menubar .p-menubar-separator {
+  background-color: rgba(255, 255, 255, 0.2); /* Color del separador */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .menubar {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  }
+
+  .menubar .p-menubar-item {
+    margin: 10px 0; /* Espaciado vertical entre elementos */
+  }
+}
+
+
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/src/assets/images/home.png'); /* Imagen de fondo si la tienes */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home-title {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #282c34; /* Color de fondo oscuro */
+  color: #ffffff; /* Color del texto */
+  padding: 20px 0; /* Espaciado vertical */
+  text-align: center; /* Centra el contenido */
+}
+
+.footer-content {
+  display: flex; /* Usar Flexbox para distribuir el contenido */
+  justify-content: space-around; /* Espacio alrededor de los elementos */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 0 20px; /* Espaciado horizontal */
+}
+
+.social-media {
+  flex: 1; /* Permite que esta sección use el espacio disponible */
+  margin-right: 20px; /* Margen a la derecha */
+}
+
+.footer__contactInfo-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.additional-info {
+  flex: 1; /* Permite que esta sección use el espacio disponible */
+}
+
+h4 {
+  margin-bottom: 10px; /* Margen inferior */
+  font-size: 1.5rem; /* Tamaño de fuente grande */
+  color: #ff0000; /* Color azul para los encabezados */
+}
+
+p {
+  margin: 5px 0; /* Margen vertical */
+  font-size: 1rem; /* Tamaño de fuente normal */
+}
+
+/* Estilos para los botones de redes sociales */
+.p-button-rounded {
+  margin: 0 5px; /* Espaciado entre botones */
+  transition: transform 0.3s; /* Animación de transformación */
+}
+
+.p-button-rounded:hover {
+  transform: scale(1.1); /* Aumentar el tamaño del botón al pasar el cursor */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .social-media, .additional-info {
+    margin-right: 0; /* Quitar margen a la derecha */
+    margin-bottom: 20px; /* Añadir margen inferior */
+  }
+
+  h4 {
+    font-size: 1.25rem; /* Tamaño de fuente más pequeño */
+  }
+
+  p {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  }
+}

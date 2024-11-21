@@ -1,0 +1,58 @@
+/* Estilo general para la página del campeonato */
+.campeonato-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+.campeonato-page h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #dc3545; /* Rojo principal */
+}
+
+/* Estilos para la tabla */
+.p-datatable {
+  margin-top: 20px;
+}
+
+.p-datatable th {
+  background-color: #dc3545; /* Rojo para encabezados */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.p-datatable td {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+/* Estilo para las imágenes de escuderías */
+.img-escuderia {
+  width: 200px; /* Tamaño ajustado */
+  height: auto;
+  object-fit: contain;
+  border-radius: 0; /* Evitar bordes redondeados */
+}
+
+/* Estilo para las imágenes de pilotos */
+.img-piloto {
+  width: 100px; /* Tamaño ajustado */
+  height: 100px;
+  object-fit: cover; /* Asegura que la imagen ocupe todo el espacio */
+  border-radius: 50%; /* Dejar las imágenes de pilotos redondas */
+  border: 2px solid #dc3545; /* Borde rojo */
+}
+
+/* Estilo para las celdas de puntos */
+.p-datatable td {
+  font-weight: bold;
+  color: #dc3545; /* Rojo para puntos */
+}
