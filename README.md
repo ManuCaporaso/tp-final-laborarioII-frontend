@@ -97,16 +97,10 @@ Este proyecto es una aplicación web dedicada a la Fórmula 1, donde se puede vi
    ```markdown
    ## Imágenes de la aplicación
 
-   ### Página Home
-   ![Home]([assets/home.png](https://github.com/ManuCaporaso/tp-final-laborarioII-frontend/blob/main/src/assets/images/Homepage.PNG))
+![Imagen de la página de inicio](https://github.com/ManuCaporaso/tp-final-laborarioII-frontend/blob/main/src/assets/images/Homepage.PNG)
+![Imagen de la página de campeonato](https://github.com/ManuCaporaso/tp-final-laborarioII-frontend/blob/main/src/assets/images/CampeonatoPage.PNG)
+![Imagen de la página de pilotos](https://github.com/ManuCaporaso/tp-final-laborarioII-frontend/blob/main/src/assets/images/PilotosPage.PNG)
+![Imagen de la página de escuderías](https://github.com/ManuCaporaso/tp-final-laborarioII-frontend/blob/main/src/assets/images/EscuderiasPage.PNG)
 
-   ### Página Pilotos
-   ![Pilotos](assets/pilotos.png)
-
-   ### Página Escuderías
-   ![Escuderías](assets/escuderias.png)
-
-   ### Clasificación del Campeonato
-   ![Campeonato](assets/campeonato.png)
 
 Este proyecto fue desarrollado como parte del curso **Laboratorio Fullstack II** en el Instituto Técnico Superior Cipolletti.
