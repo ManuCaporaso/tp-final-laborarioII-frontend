@@ -1,70 +1,112 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto Final: Clasificación del Campeonato de Fórmula 1
 
-## Available Scripts
+Este proyecto es una aplicación web dedicada a la Fórmula 1, donde se puede visualizar y manipular información de pilotos, escuderías y el campeonato 2024. Es el proyecto final de la materia **Laboratorio Fullstack II** del Instituto Técnico Superior Cipolletti.
 
-In the project directory, you can run:
+## Tecnologías utilizadas
 
-### `npm start`
+- **Frontend**
+  - React
+  - PrimeReact
+  - CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Backend**
+  - Node.js
+  - Express
+  - Sequelize (ORM)
+  - MySQL (base de datos)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instrucciones de instalación
 
-### `npm test`
+### Requisitos previos
+- Node.js instalado en tu máquina.
+- MySQL o un servicio equivalente para la base de datos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clonar los repositorios
+1. Clona el repositorio del **frontend**:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO_FRONTEND>
+   ```
+2. Clona el repositorio del **backend**:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO_BACKEND>
+   ```
 
-### `npm run build`
+### Configuración del backend
+1. Accede a la carpeta del backend:
+   ```bash
+   cd <CARPETA_BACKEND>
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Realiza el **dump** de la base de datos:
+   - En la carpeta `database` del backend encontrarás un archivo SQL con los datos necesarios.
+   - Importa este archivo en tu servidor MySQL.
+4. Crea un archivo `.env` en la raíz del backend con los siguientes parámetros:
+   ```plaintext
+   DB_NAME=
+   DB_USER=
+   DB_PASSWORD=
+   DB_HOST=
+   PORT=
+   DB_DIALECT=
+   ```
+5. Conecta la base de datos y enciende el servidor:
+   ```bash
+   npm run dev
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Configuración del frontend
+1. Accede a la carpeta del frontend:
+   ```bash
+   cd <CARPETA_FRONTEND>
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Acceso a la aplicación
+- Abre tu navegador y accede a: [http://localhost:3000/](http://localhost:3000/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Características de la aplicación
 
-### `npm run eject`
+- **Home:** Página de bienvenida con información general sobre la Fórmula 1.
+- **Pilotos:** CRUD completo (Crear, Leer, Actualizar, Eliminar) para la gestión de pilotos.
+- **Escuderías:** CRUD completo para la gestión de escuderías.
+- **Campeonato:** Vista detallada del campeonato, cuyos datos solo pueden ser manipulados directamente en el código.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Notas importantes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- La aplicación se conecta a una API creada en Node.js usando **axios**.
+- Se utilizó **PrimeReact** para los componentes y **CSS** para el diseño personalizado.
+- Este proyecto cumple con la consigna de conectar una app React con una API a través de un backend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Imágenes de la aplicación
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Instrucciones para las imágenes
+1. Guarda las capturas en una carpeta llamada `assets` dentro del repositorio.
+2. En el README, agrega las imágenes de la siguiente manera:
+   ```markdown
+   ## Imágenes de la aplicación
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ### Página Home
+   ![Home](assets/home.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ### Página Pilotos
+   ![Pilotos](assets/pilotos.png)
 
-### Code Splitting
+   ### Página Escuderías
+   ![Escuderías](assets/escuderias.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ### Clasificación del Campeonato
+   ![Campeonato](assets/campeonato.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto fue desarrollado como parte del curso **Laboratorio Fullstack II** en el Instituto Técnico Superior Cipolletti.
