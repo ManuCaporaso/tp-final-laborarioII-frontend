@@ -17,6 +17,7 @@ import Bearman from '../assets/images/pilotos/olibea01.png';
 import Magnussen from '../assets/images/pilotos/kevmag01.png';
 import Ocon from '../assets/images/pilotos/estoco01.png';
 import Colapinto from '../assets/images/pilotos/fracol01.png';
+import Lawson from '../assets/images/pilotos/lialaw01.png';
 import Zhou from '../assets/images/pilotos/guazho01.png';
 import Sargent from '../assets/images/pilotos/logsar01.png';
 import Bottas from '../assets/images/pilotos/valbot01.png';
@@ -44,6 +45,7 @@ const GaleriaPilotos = {
   Magnussen,
   Ocon,
   Colapinto,
+  Lawson,
   Zhou,
   Sargent,
   Bottas
