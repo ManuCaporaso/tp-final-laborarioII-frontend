@@ -98,7 +98,7 @@ Este proyecto es una aplicación web dedicada a la Fórmula 1, donde se puede vi
    ## Imágenes de la aplicación
 
    ### Página Home
-   ![Home](assets/home.png)
+   ![Home]([assets/home.png](https://github.com/ManuCaporaso/tp-final-laborarioII-frontend/blob/main/src/assets/images/Homepage.PNG))
 
    ### Página Pilotos
    ![Pilotos](assets/pilotos.png)
